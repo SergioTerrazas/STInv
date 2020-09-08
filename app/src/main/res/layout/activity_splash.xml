@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100.0"
+    tools:context=".Actividades.SplashActivity"
+    android:orientation="vertical">
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/llyButtonSplash"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:minWidth="25.0px"
+        android:minHeight="25.0px"
+        android:layout_weight="10.0" />
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/llyCentroSplash"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="0.0dip"
+        android:layout_marginBottom="0.0dip"
+        android:layout_weight="60.0">
+        <ImageView android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="161.0dip"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/idVersion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Version" />
+        <ProgressBar
+            android:id="@+id/idProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layyy"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:minWidth="25.0px"
+        android:minHeight="25.0px"
+        android:layout_weight="30.0" />
+</LinearLayout>
